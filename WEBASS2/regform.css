@@ -1,0 +1,133 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3a50, #ffffff);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+
+.error {
+    font-size: 13px;
+    color: #e74c3c;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px 0;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+#summary {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    background-color: #f0f4f8;
+    padding: 25px 30px;
+    border-left: 5px solid #3a5a64;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#summary h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#summary p {
+    margin: 8px 0;
+    color: #34495e;
+    font-size: 15px;
+}
+
+
